@@ -1,0 +1,100 @@
+html, 
+body{
+    height: 100%;
+}
+
+/*Cabeçaho*/
+
+header{
+    background-image: url(./img/castelo.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.topCasaFina-banner{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    transition: 0.5s;
+}
+
+/*Sobre nós*/
+
+#paineis-sobre{
+    margin-top: 20px;
+}
+
+/*Depoimentos*/
+
+.titulo-depoimentos{
+    background-color: #0275D8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFF;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*Contato Formulario*/
+
+.grupo-radio, 
+.contato-select{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child{
+    margin-top: 0;
+}
+
+/*Rodapé*/
+
+footer{
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer address:last-child{
+    margin-bottom: 0;
+}
+
+@media(min-width: 768px){
+
+    /*Sobre nós*/
+    #paineis-sobre{
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 992px){
+
+    /*Cabeçalho*/
+    .topCasaFina-banner{
+        left: 0;
+        transform: translate(0, -80%);
+        width: 50%;
+    }
+
+    .topCasaFina-bannerWrapper{
+        position: relative;
+        height: 100%;
+
+    }
+}
